@@ -1,14 +1,23 @@
-# 78计划
-
-手机优先的减脂饮食记录 PWA。支持三餐记录、532 碳蛋脂目标、体重趋势、7 日均重、每日任务分和本地数据保存。
-
-## 部署到 Vercel
-
-1. 把这个文件夹上传到 GitHub。
-2. 打开 Vercel，选择 `Add New Project`。
-3. 导入这个 GitHub 仓库。
-4. Framework Preset 选择 `Other`。
-5. Build Command 留空。
-7. 点击 `Deploy`。
-
-部署完成后，用手机打开 Vercel 链接，再通过浏览器菜单添加到主屏幕。
+{
+  "cleanUrls": true,
+  "headers": [
+    {
+      "source": "/sw.js",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/manifest.json",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/manifest+json; charset=utf-8"
+        }
+      ]
+    }
+  ]
+}
