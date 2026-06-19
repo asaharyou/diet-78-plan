@@ -9,7 +9,6 @@
 3. 导入这个 GitHub 仓库。
 4. Framework Preset 选择 `Other`。
 5. Build Command 留空。
-6. Output Directory 填 `public`。
 7. 点击 `Deploy`。
 
 部署完成后，用手机打开 Vercel 链接，再通过浏览器菜单添加到主屏幕。
